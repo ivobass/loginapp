@@ -53,6 +53,7 @@ class AppName extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
                             decoration: InputDecoration(
+                               prefixIcon: Icon(Icons.mail),
                               border: OutlineInputBorder(),
                               labelText: 'E-mail Adress',
                             ),
@@ -73,6 +74,8 @@ class AppName extends StatelessWidget {
                           child: TextField(
                             obscureText: true, // coloca escondigo o texto //
                             decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.lock),
+                              // suffixIcon: Icon(Icons.lock), put icon at the end//
                               border: OutlineInputBorder(),
                               labelText: 'Password',
                             ),
