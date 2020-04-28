@@ -7,11 +7,13 @@ class AppName extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.lightBlueAccent,
+        primaryColorDark: Colors.yellow[400],// importante para mudar as cores do thema//
+      ),
       title: 'Login App',
       home: Scaffold(
-        drawer: Drawer(
-          
-        ),
+        drawer: Drawer(),
         appBar: AppBar(
           backgroundColor: Colors.lightBlue,
           title: Row(
@@ -53,7 +55,7 @@ class AppName extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
                             decoration: InputDecoration(
-                               prefixIcon: Icon(Icons.mail),
+                              prefixIcon: Icon(Icons.mail),
                               border: OutlineInputBorder(),
                               labelText: 'E-mail Adress',
                             ),
