@@ -12,7 +12,7 @@ Mobile App feita em Flutter
 O projeto foi feito com flutter e dart como layout e desenho de uma pagina de login
 
 
-<img width="200" src="assets/login.png" alt="page-home">
+<img width="300" src="assets/login.png" alt="page-home">
 
 
 🔧 Tecnologias utilizadas:
