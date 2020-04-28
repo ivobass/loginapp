@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img width="600" src="assets/flutter.jpeg" />
+    <img width="400" src="assets/flutter.jpeg" />
 </h1>
 
 
@@ -7,9 +7,9 @@
 Mobile App feita em Flutter
 </p>
 
-📌 Horse Walking 
+📌 Login
 ------------------
-O projeto foi feito com flutter e dart para crear apps com State e practicar Funções e utilizar interação com botões
+O projeto foi feito com flutter e dart como layout e desenho de uma pagina de login
 
 
 <img src="assets/login.png" alt="page-home">
