@@ -4,6 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 void main() => runApp(AppName());
 
 class AppName extends StatelessWidget {
+  var password = InputDecoration(
+                              prefixIcon: Icon(Icons.lock),
+                              suffixIcon: Icon(Icons.visibility), 
+                              border: OutlineInputBorder(),
+                              labelText: 'Password',
+                            );
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -75,12 +81,7 @@ class AppName extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: TextField(
                             obscureText: true, // coloca escondigo o texto //
-                            decoration: InputDecoration(
-                              prefixIcon: Icon(Icons.lock),
-                              // suffixIcon: Icon(Icons.lock), put icon at the end//
-                              border: OutlineInputBorder(),
-                              labelText: 'Password',
-                            ),
+                            decoration: password,
                           ),
                         ),
                         Padding(
@@ -102,7 +103,9 @@ class AppName extends StatelessWidget {
                             disabledColor: Colors.black,
                             disabledTextColor: Colors.grey,
                             child: Text('Login'),
-                            onPressed: () {},
+                            onPressed: () {
+                              
+                            },
                           ),
                         ),
                       ],
