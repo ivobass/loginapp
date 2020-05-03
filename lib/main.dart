@@ -34,6 +34,14 @@ class _LoginAppState extends State<LoginApp> {
       controller: usernameData,
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.mail),
+        suffixIcon: GestureDetector(
+            onTap: (){
+            setState(() {
+              _showpass = false;
+            });
+          },
+          child: Icon(Icons.close),
+        ),
         border: OutlineInputBorder(),
         labelText: 'E-mail Adress',
       ),
@@ -45,6 +53,8 @@ class _LoginAppState extends State<LoginApp> {
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.lock),
         suffixIcon: GestureDetector(
+        
+          
           // onTapDown:
           // onTapUp:
           child: Icon(Icons.visibility),
@@ -152,7 +162,7 @@ class _LoginAppState extends State<LoginApp> {
                                     title: Text('Login Successful'),
                                   ),
                                 );
-                              }else{
+                              } else {
                                 showDialog(
                                   context: context,
                                   child: AlertDialog(
@@ -160,8 +170,6 @@ class _LoginAppState extends State<LoginApp> {
                                   ),
                                 );
                               }
-                          
-
                             });
                           },
                         ),
