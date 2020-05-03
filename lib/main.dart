@@ -35,10 +35,8 @@ class _LoginAppState extends State<LoginApp> {
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.mail),
         suffixIcon: GestureDetector(
-            onTap: (){
-            setState(() {
-              _showpass = false;
-            });
+          onTap: () {
+            setState(() {});
           },
           child: Icon(Icons.close),
         ),
@@ -52,20 +50,11 @@ class _LoginAppState extends State<LoginApp> {
       obscureText: _showpass, // coloca escondigo o texto //
       decoration: InputDecoration(
         prefixIcon: Icon(Icons.lock),
-        suffixIcon: GestureDetector(
-        
-          
-          // onTapDown:
-          // onTapUp:
-          child: Icon(Icons.visibility),
-          onLongPress: () {
+        suffixIcon: IconButton(
+          icon: Icon(Icons.visibility),
+          onPressed: () {
             setState(() {
               _showpass = false;
-            });
-          },
-          onLongPressUp: () {
-            setState(() {
-              _showpass = true;
             });
           },
         ),
