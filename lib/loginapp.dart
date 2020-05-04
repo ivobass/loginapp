@@ -13,7 +13,7 @@ class _LoginAppState extends State<LoginApp> {
 
   void _passVisibility() {
     setState(() {
-      _showpass = !_showpass;
+      _showpass = !_showpass;  // inverte o valor o simbolo ! coloca ao contrario// 
     });
   }
 
@@ -50,37 +50,37 @@ class _LoginAppState extends State<LoginApp> {
           : false, // coloca escondigo o texto //
     );
 
-final clickButton = FlatButton(
-                          padding: EdgeInsets.all(12.0),
-                          splashColor: Colors.blue,
-                          color: Colors.blue,
-                          textColor: Colors.white,
-                          disabledColor: Colors.black,
-                          disabledTextColor: Colors.grey,
-                          child: Text('Login'),
-                          onPressed: () {
-                            setState(() {
-                              if (usernameData != null &&
-                                  usernameData.text == "lorem@ipsum.com" &&
-                                  passwordData != null &&
-                                  passwordData.text == "mySecret43") {
-                                showDialog(
-                                  context: context,
-                                  child: AlertDialog(
-                                    title: Text('Login Successful'),
-                                  ),
-                                );
-                              } else {
-                                showDialog(
-                                  context: context,
-                                  child: AlertDialog(
-                                    title: Text('Login Failed'),
-                                  ),
-                                );
-                              }
-                            });
-                          },
-                        );
+    final clickButton = FlatButton(
+      padding: EdgeInsets.all(12.0),
+      splashColor: Colors.blue,
+      color: Colors.blue,
+      textColor: Colors.white,
+      disabledColor: Colors.black,
+      disabledTextColor: Colors.grey,
+      child: Text('Login'),
+      onPressed: () {
+        setState(() {
+          if (usernameData != null &&
+              usernameData.text == "lorem@ipsum.com" &&
+              passwordData != null &&
+              passwordData.text == "mySecret43") {
+            showDialog(
+              context: context,
+              child: AlertDialog(
+                title: Text('Login Successful'),
+              ),
+            );
+          } else {
+            showDialog(
+              context: context,
+              child: AlertDialog(
+                title: Text('Login Failed'),
+              ),
+            );
+          }
+        });
+      },
+    );
     return Scaffold(
       drawer: Drawer(),
       appBar: AppBar(
