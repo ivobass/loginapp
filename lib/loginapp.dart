@@ -45,9 +45,7 @@ class _LoginAppState extends State<LoginApp> {
         border: OutlineInputBorder(),
         labelText: 'Password',
       ),
-      obscureText: _showpass != "Password"
-          ? _showpass
-          : false, // coloca escondigo o texto //
+      obscureText: _showpass  // coloca escondigo o texto //
     );
 
     final clickButton = FlatButton(
